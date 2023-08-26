@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project on html and css</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana;
+        }
+
+        .banner {
+            width: 100%;
+            height: 100vh;
+            background-image: url("https://wallpapershome.com/images/wallpapers/water-1920x1080-4k-hd-wallpaper-splash-glass-abstract-wallpaper-3760.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .navbar {
+            width: 100%;
+            margin: auto;
+            /* padding: 5px; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .logo {
+            width: 80px;
+            cursor: pointer;
+        }
+
+        .navbar ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 25px;
+            position: relative;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: bisque;
+            text-transform: uppercase;
+        }
+
+        .navbar ul li::after {
+            content: '';
+            height: 3px;
+            width: 0;
+            background: #1eddca;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.6s;
+        }
+
+        .navbar ul li:hover:after {
+            width: 100%;
+        }
+
+        .content {
+            width: 100%;
+            position: absolute;
+            top: 60%;
+            transform: translateY(-50%);
+            text-align: right;
+            color: white;
+            right: 4%;
+        }
+
+        .content h1 {
+            font-size: 50px;
+            margin-top: 80px;
+
+        }
+
+        .content p {
+            margin: 20px auto;
+            font-weight: 500;
+            line-height: 25px;
+            text-align: right;
+        }
+
+        button {
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid #f0e5e3;
+            background: transparent;
+            color: #f3eaea;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        span {
+            background: #0eecd6;
+            height: 100%;
+            width: 0;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.6s;
+        }
+
+        button:hover span {
+            width: 100%;
+        }
+
+        button:hover {
+            border: none;
+        }
+
+        .section2 {
+            width: 50%;
+            height: 100vh;
+
+        }
+
+        .slide2 {
+            width: 100%;
+            /* margin-top: 40px; */
+            display: flex;
+            background-color: antiquewhite;
+            margin: 40px 0 45px 0;
+            height: 500px;
+
+        }
+
+
+
+        .forPara {
+            width: 50%;
+            text-align: justify;
+            padding-left: 120px;
+            line-height: 25px;
+
+        }
+
+        .para {
+
+            font-size: 16px;
+            /* margin-top: 130px; */
+            line-height: 25px;
+            margin: 156px 0 30px 0;
+        }
+
+        #pre2 {
+            font-size: 40px;
+        }
+
+
+        .s2 {
+            color: antiquewhite;
+            /* margin-left: 40px; */
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 40px 0 0 40px;
+
+
+        }
+
+        .SlideUp {
+            animation-name: SlideUp;
+            animation-duration: 3s;
+            visibility: visible;
+            border-radius: 40px;
+
+        }
+
+        @keyframes SlideUp {
+            0% {
+                opacity: 0;
+                transform: translateX(70%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0%);
+            }
+
+        }
+
+        .SlideDown {
+            animation-name: SlideDown;
+            animation-duration: 3s;
+            visibility: visible;
+            border-radius: 20px;
+        }
+
+        @keyframes SlideDown {
+            0% {
+                opacity: 0;
+                transform: translateX(70%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0%);
+            }
+
+        }
+
+        /* Gallery */
+
+        .head1 {
+            font-size: 35px;
+            margin-top: 50px;
+            text-align: center;
+            color: black;
+        }
+
+        .img1 {
+            margin-top: 30px;
+            width: 250px;
+            height: 250px;
+            padding: 10px;
+            margin-left: 50px;
+            margin-bottom: 20px;
+            box-shadow:  10px 10px 9px 3px rgba(25, 137, 202, 0.5);
+           
+            border-radius: 20px;
+            margin-bottom: 50px;
+        }
+
+        .paragraph {
+
+            background-image: url("https://i.pinimg.com/originals/96/1e/7b/961e7b5ab22f51655970cc4e7bf2bd07.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            color: black;
+        }
+
+        .paragraph h1 {
+            text-align: center;
+            padding: 25px;
+            /* margin-bottom: 1px; */
+        }
+
+
+
+        .paragraph li {
+            margin-left: 90px;
+            line-height: 0%;
+        }
+
+        .mainDiv {
+            display: flex;
+            flex-direction: row;
+            margin: -50px 0 0 0;
+        }
+
+        .divone {
+            background-color: rgba(255, 255, 255, 0.3);
+            width: 50%;
+            color: black;
+            display: block;
+
+        }
+
+        .divtwo {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: black;
+            width: 50%;
+
+        }
+
+        .grid {
+            display: grid;
+            width: 800px;
+            display: flex;
+            height: 50%;
+        }
+
+        .grid-item {
+            background-color: #fff;
+            border-radius: 10px;
+            /* overflow: hidden; */
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            transition: 0.8s;
+            margin-left: 100px;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-0.5%);
+            box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+        }
+
+        .card img {
+            display: block;
+            width: 220px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 10px;
+
+        }
+
+        .card-header {
+            font-size: 25px;
+            font-weight: 500;
+            color: #0d0d0d;
+            margin-bottom: 20px;
+            margin: 10px;
+
+        }
+
+        .card-text {
+            font-size: 15px;
+            letter-spacing: 1px;
+            line-height: 1.7;
+            color: #3d3d3d;
+            margin-bottom: 20px;
+
+        }
+
+        .card-btn {
+            display: block;
+            width: 100%;
+            padding: 25px;
+            font-size: 2;
+            text-align: center;
+            color: lightseagreen;
+            border: none;
+            border-radius: 0.4rem;
+            transition: 0.2s;
+            cursor: pointer;
+            letter-spacing: 0.1rem;
+
+        }
+
+        .card-btn span {
+            margin-left: 20px;
+            transition: 0.2s;
+        }
+
+        .card-btn:hover,
+        .card-btn:active {
+            background-color: #1eddca;
+        }
+
+        .card-btn:hover,
+        .card-btn:active {
+            margin-left: 1px;
+
+        }
+
+        .cardHead {
+            text-align: center;
+            padding: 30px;
+
+        }
+
+        .service {
+           
+            padding-bottom: 80px;
+
+        }
+        /* footer section  */
+        .footer {
+            background-color: #0d0d0d;
+        }
+        .footer-main { display: flex; flex-direction: row;}
+        .col1 {
+            width: 22%; margin: 40px 18px; padding: 20px;
+            color: antiquewhite;
+            line-height: 25px;
+             /* background-color: #cdc6c6; */
+        }
+        .footer i {
+            font-size: 25px;
+            color:aqua;
+        }   
+        .socialChild li{
+            display: inline-block; margin-right: 20px;
+        }
+        
+        .col1 .logofooter{
+            width: 60px;
+            height: 60px;
+        }
+        .col1 pre{
+            font-size: 30px;
+        }
+        .col1 a{
+            text-decoration: none;
+            color: aqua;
+        }
+        .shift{
+            display: block;
+        }
+        .shift pre{
+            position: relative;
+            left:45px;
+            bottom: 45px;
+           
+        }
+        .shift h3{
+            margin: 0 0 -34px -43px;
+        }
+        .col1 h3{
+            position: relative;
+            left:30px;
+            bottom: 28px;
+
+        }
+            
+        </style>
+
+</head>
+
+<body>
+    <div class="banner">    <!--section 1-->
+        <div class="navbar">
+            <img src="images/images-removebg-preview.png" alt="" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="aboutproject1.html">ABOUT</a></li>
+                    <li><a href="contactproject1.html">CONTACT</a></li>
+                    <li><a href="helpproject1.html">GALLERY</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h1>
+                <pre>L o v e  W a t e r </pre>
+            </h1>
+            <pre>“When the well’s dry, we know the worth of water.” – Benjamin Franklin </pre>
+            <div>
+                <button id="btn2" type="button"><span></span>READ MORE</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide2"><!--section 2-->
+
+
+        <div class="s2">
+            <img id="scrolling" src="https://media0.giphy.com/media/gLWZMy6cpK4Cca2MpA/giphy.gif" alt="" width="100%"
+                height="400px">
+        </div>
+
+        <div class="forPara">
+            <p class="para">
+                Water is the basic necessity of all life forms, whether it be humans, plants, or animals. Water is a
+                crucial part of our lives, without which life cannot sustain.
+
+            <pre id="pre2">  “Every Single Drop Matters.”
+                    
+            </pre>
+
+            </p>
+        </div>
+
+    </div>
+
+    <script>
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.documentElement.scrollTop > 150) {
+                document.getElementById("scrolling").className = "SlideUp"
+
+            }
+
+            else if (document.documentElement.scrollTop > 100) {
+                document.getElementById("scrolling").className = "SlideDown"
+            }
+
+        }
+
+
+
+    </script>
+
+    <div class="paragraph"><!--section 3-->
+        <pre>
+            <h1><pre>50 W A Y S   T O   C O N S E R V E   W A T E R </pre>
+        </h1>
+        <div class="mainDiv">
+            <div class="divone">
+                <li>Prefer to use the shower, not always a bath.</li>
+                <li>When brushing your teeth, close the tap!</li>
+                <li>Use a watering can to water the plants.</li>
+                <li>Use a bucket to clean the floors.</li>
+                <li>When soaping in the shower, close the shower tap</li>
+                <li>Use the washing machine fully loaded, not half full.</li>
+                <li>Prefer to use a dishwasher to do the dishes!</li>
+                <li>When doing dishes by hand, don’t let the water running from the tap.</li>
+                <li>Use a bucket and sponge to clean the car!</li>
+                <li>Use the correct water saving button on the toilet!</li>
+            </div>
+            <div class="divtwo">
+                <li>When drinking water, try to use our drinking fountain</li>
+                <li>When you drink from the tap, close the tap when done!</li>
+                <li>Water the plants in the playground with a watering can.</li>
+                <li>Don’t play too much with water in the summer.</li>
+                <li>We should try to reuse our rainwater.</li>
+                <li>When you drink water from a glass only take as much as you need</li>
+                <li>Use the water you saved to drink for later.</li>
+                <li>Double check faucet is completely off when leaving the bathroom.</li>
+                <li>Don’t go to the bathroom unless you need to go.</li>
+                <li>Fix broken toilets and leaky faucets.</li>
+
+            </div>
+        </div>
+
+
+        </pre>
+
+    </div>
+
+    <div><!--SECTION 4-->
+        <h2 class="head1">
+            <pre>O U R   G A L L E R Y</pre>
+        </h2>
+        <img class="img1"
+            src="https://media.istockphoto.com/id/914114366/video/little-girl-drinking-water-near-green-field.jpg?s=640x640&k=20&c=XQxvKCg0mHwscFfTfak86moLru91AQx0PENGisJLBaU="
+            alt="">
+        <img class="img1"
+            src="https://cdn03.allafrica.com/download/pic/main/main/csiid/00460669:295c6fd4c6512036154bceb0a364f1a3:arc614x376:w735:us1.jpg"
+            alt="">
+        <img class="img1" src="https://cdnassets.hw.net/1b/0f/a6c9c0ba4af5b08f8b983e01e861/atlascopco-waterforall.jpg"
+            alt="">
+        <img class="img1"
+            src="https://images.unsplash.com/photo-1538300342682-cf57afb97285?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGRyaW5raW5nJTIwd2F0ZXJ8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
+            alt="">
+
+    </div>
+
+    <div class="service"><!--SECTION 5-->
+        <div class="cardHead">
+            <h1>
+                <pre>S E R V I C E S   W E   P R O V I D E </pre>
+            </h1>
+        </div>
+        <div class="grid">
+            <div class="grid-item">
+                <div class="card">
+                    <div class="imgTag">
+                        <img class="card-img"
+                            src="https://www.homelane.com/blog/wp-content/uploads/2020/06/shutterstock_1170832549.jpg"
+                            alt="">
+                    </div>
+                    <div class="card-content">
+                        <h1 class="card-header">RW harvesting</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="card">
+                    <div class="imgTag">
+                        <img class="card-img"
+                            src="https://static.mygov.in/media/blog/2019/11/Rain-water-harvesting-Blog-Inside-pix-1.jpg"
+                            alt="">
+                    </div>
+                    <div class="card-content">
+                        <h1 class="card-header">Artificial Lake</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="card">
+                    <div class="imgTag">
+                        <img class="card-img"
+                            src="https://media.istockphoto.com/id/1353826551/photo/volunteer-picking-up-plastic-bottle-from-polluted-lake.jpg?b=1&s=170667a&w=0&k=20&c=3t8g1ZiezRqNFG0JOg5gqkVOaddw0d6utV-_6Bk9Rww="
+                            alt="">
+                    </div>
+                    <div class="card-content">
+                        <h1 class="card-header">River clean</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="card">
+                    <div class="imgTag">
+                        <img class="card-img" src="https://i.ytimg.com/vi/WJ7eD6A4LlE/maxresdefault.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h1 class="card-header">Planting trees</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+        <div class="footer">
+             <div class="footer-main">   
+                <div class="col1">
+                    <div class="shift">
+                    <h3><img src="images/images-removebg-preview.png" alt="" class="logofooter"><pre>Love Water</pre></h3>
+                    <p>This organization was established on 4th August, 1923. </p>
+                    </div><!-- shift-->
+                    <div class="socialChild">
+                        <ul class="chlid">
+                            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                            <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div><!--socialChild-->
+                </div><!--col1-->
+
+                    <div class="col1">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <h3>Address</h3>
+                        <p>Chhatrapati Shivaji Maharaj<br> Administrative Premises,<br>
+                            Ravindranath Tagore Marg,<br>
+                            Nagpur 440001.<br>                            
+                        </p>
+                    </div>
+                    <div class="col1" id="phone">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <h3>Phone</h3><a href="18002 660999">18002 660999</a>
+                    </div>
+                    <div class="col1">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <h3>Email</h3> <a href="gmail.com">loveWater@gmail.com</a>
+                    </div>           
+    
+                
+                </div><!-- footer-main-->
+            </div><!-- footer-->
+    </div>
+</body>
+
+</html>
