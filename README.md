@@ -1,0 +1,11 @@
+# lovewater
+A "Love Water" website project could promote awareness and advocacy for water conservation, sustainability, and the importance of preserving our water resources.![1](https://github.com/Ashwini03Admane/lovewater/assets/131963321/f701d5b7-58e2-452d-9ef2-925bdfd4d893)
+![1](https://github.com/Ashwini03Admane/lovewater/assets/131963321/450bfb32-7fa3-4b45-89ba-9e48fc707a86)
+![2](https://github.com/Ashwini03Admane/lovewater/assets/131963321/34995964-9133-4cbb-b8e4-2730e97013ad)
+![3](https://github.com/Ashwini03Admane/lovewater/assets/131963321/07c130fb-8dfc-4ba0-a505-4c24e6a00010)
+![4](https://github.com/Ashwini03Admane/lovewater/assets/131963321/9075d8c5-1e34-4e7d-b2cc-3404a8c9b961)
+![5](https://github.com/Ashwini03Admane/lovewater/assets/131963321/b8918d17-121e-49bd-8744-fea0be5866a0)
+![about6](https://github.com/Ashwini03Admane/lovewater/assets/131963321/283ca6fd-130d-4a5e-91d1-4f1b1982f51c)
+![contact7](https://github.com/Ashwini03Admane/lovewater/assets/131963321/00721951-44fe-4de2-b6e1-18bf98f5188e)
+![gal8](https://github.com/Ashwini03Admane/lovewater/assets/131963321/7579a20c-0bc6-4fff-afdc-8faec6b04c53)
+![gal9](https://github.com/Ashwini03Admane/lovewater/assets/131963321/8b56fd48-58f0-42a2-8a38-e9a3ee95b107)
