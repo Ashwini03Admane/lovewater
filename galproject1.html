@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana;
+        }
+
+        .banner {
+            width: 100%;
+            height: 100%;
+            background-color: #7ccac2; 
+            background-position: center;
+            /* background-color:rgb(141, 228, 228); */
+
+        }
+
+        .navbar {
+            width: 100%;
+            margin: auto;
+            /* padding: 5px; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .logo {
+            width: 80px;
+            cursor: pointer;
+        }
+
+        .navbar ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 25px;
+            position: relative;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: bisque;
+            text-transform: uppercase;
+        }
+
+        .navbar ul li::after {
+            content: '';
+            height: 3px;
+            width: 0;
+            background: #1eddca;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.6s;
+        }
+
+        .navbar ul li:hover:after {
+            width: 100%;
+        }
+
+        .head1 {
+            font-size: 35px;
+            margin-top: 50px;
+            text-align: center;
+            color: black;
+        }
+
+        .img1 {
+            margin-top: 30px;
+            width: 250px;
+            height: 250px;
+            padding: 10px;
+            margin-left: 50px;
+            margin-bottom: 20px;
+            box-shadow: 0px 8px 16px 0px rgba(170, 110, 0, 0.5);
+            border-radius: 20px;
+            margin-bottom: 50px;
+        }
+
+       
+       
+
+
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="images/logoI.png"
+                class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutproject1.html">ABOUT</a></li>
+                    <li><a href="contactproject1.html">CONTACT</a></li>
+                    <li><a href="galproject1.html">GALLERY</a></li>
+
+                </ul>
+
+
+
+
+            </nav>
+        </div>
+
+        <div class="content">
+            <div>
+                <h2 class="head1">
+                    <pre>O U R   G A L L E R Y</pre>
+                </h2>
+                <img class="img1"
+                    src="https://images.unsplash.com/photo-1598600827667-feb140e51e20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fHNhdmUlMjB3YXRlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                <img class="img1"
+                    src="https://images.unsplash.com/photo-1440020143730-090579c4d53c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTd8fHNhdmUlMjB3YXRlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                <img class="img1"
+                    src="https://images.unsplash.com/photo-1639390325187-98c9534805e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAwfHxzYXZlJTIwd2F0ZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                <img class="img1"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDxhpxKMLDTMurmnT4LPbrGd_1_PB_rTGV7Q&usqp=CAU"
+                    alt="">
+
+                    <img class="img1"
+                    src="https://images.unsplash.com/photo-1522752680837-5585c6259e39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fGNsaW5lJTIwcml2ZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                    
+                    <img class="img1"
+                    src="https://images.unsplash.com/photo-1462524653740-777d166c975e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fGNsaW5lJTIwcml2ZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+
+                    <img class="img1"
+                    src="https://images.unsplash.com/photo-1450340171252-2766ed65a4ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzYyfHxjbGluZSUyMHJpdmVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+
+                    <img class="img1"
+                    src="https://images.unsplash.com/photo-1519458498024-9448c70cbae7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjUyfHxjbGluZSUyMHJpdmVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+
+                    <img class="img1"
+                    src="https://images.unsplash.com/photo-1651592279293-c70b4f04be11?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzMwfHxwbGFudGluZyUyMHNlZWRzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                    <img class="img1"
+                    src="https://images.unsplash.com/photo-1664819310394-e10f80359f54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzE4fHxwbGFudGluZyUyMHNlZWRzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                    <img class="img1"
+                    src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHBsYW50aW5nJTIwc2VlZHN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                    <img class="img1"
+                    src="https://images.unsplash.com/photo-1615671524827-c1fe3973b648?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBsYW50aW5nJTIwc2VlZHN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+    
+            </div>
+    
+
+            
+            
+        </div>
+    </div>
+    
+</body>
+</html>
